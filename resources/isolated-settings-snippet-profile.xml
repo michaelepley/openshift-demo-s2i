@@ -1,0 +1,22 @@
+    <profile>
+      <id>securecentral</id>
+      <!--Override the repository (and pluginRepository) "central" from the Maven Super POM -->
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>${RESOURCE_MAVEN_REPOSITORY_CENTRAL_ISOLATED_MIRROR}</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>central</id>
+          <url>${RESOURCE_MAVEN_REPOSITORY_CENTRAL_ISOLATED_MIRROR}</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
